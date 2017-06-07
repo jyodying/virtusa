@@ -1,0 +1,189 @@
+//custom.scss
+
+body {
+	background-color: #f0f0f0
+}
+
+nav {
+	background-color: #c0c0c0;
+	ul {
+		li {
+			list-style:none;
+			float:left;
+			width:(100px/6px) * 1%;
+			line-height: 4.5rem;
+		}
+	}
+}
+
+#header, #timesheet {
+	max-width:100%;
+	input {
+		margin: 0.5rem 0;
+		padding: 0.25rem;
+		height: 2rem
+	}
+}
+
+#timesheet_for {
+	background-color: #d0d0d0;
+	padding-left: 12.5%;
+	padding-right: 12.5%;
+	label {
+		float: left;
+		font-weight: 700;
+		line-height: 3.25rem;
+
+	}
+	input {
+		width: auto
+	}
+	a.button {
+		float: left;
+		margin: 0.25rem 0 0 0.5rem;
+		&.small {
+			margin: 0.5rem 0 0
+		}
+
+	}
+	& ~ div {
+		max-width: 75rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+
+#add_a_project {
+	border:1px solid gray;
+	background-color: white;
+	position: relative;
+	.popover {
+		position: absolute;
+		top:6.3rem;
+		left: 0;
+		border:1px solid gray;
+		background-color: white;
+		z-index: 100;
+		.close {
+			position: absolute;
+			top: -7rem;
+			left:-0.5rem;
+			a {
+				color:black;
+			}
+		}
+		.details {
+			position: absolute;
+			top:0;
+			left: 16.7rem;
+			border:1px solid gray;
+			background-color: white;
+			min-width: 268px
+		}
+	}
+}
+
+.grouped-project, .project, .task {
+	& .large-1, & .medium-1 {
+		text-align: right
+	}
+}
+
+.task  {
+	.columns {
+		position: relative;
+	}
+	input {
+		text-align: right
+	}
+	.check:before {
+		font-family: 'FontAwesome';
+		content: "\f00c";
+		display: block;
+		position: absolute;
+		top: 1rem;
+		left: 1.25rem;
+		font-size: .5rem
+	}
+	.double-check:before {
+		font-family: 'FontAwesome';
+		content: "\f00c";
+		display: block;
+		position: absolute;
+		top: 0.9rem;
+		left: 1.25rem;
+		font-size: .5rem
+	}
+	.double-check:after {
+		font-family: 'FontAwesome';
+		content: "\f00c";
+		display: block;
+		position: absolute;
+		top: 1.1rem;
+		left: 1.25rem;
+		font-size: .5rem
+	}
+	.rejected {
+		input { border:1px solid red; }
+		&:before {
+			font-family: 'FontAwesome';
+			content: "\f111";
+			display: block;
+			position: absolute;
+			top: 1rem;
+			left: 1.25rem;
+			font-size: .5rem;
+			color:red;
+		}
+	}
+	.dot:before {
+		font-family: 'FontAwesome';
+		content: "\f10c";
+		display: block;
+		position: absolute;
+		top: 1rem;
+		left: 1.25rem;
+		font-size: .5rem
+	}
+	.dirty {
+		input { background-color: #c0c0c0; }
+		&:before {
+			font-family: 'FontAwesome';
+			content: "\f10c";
+			display: block;
+			position: absolute;
+			top: 1rem;
+			left: 1.25rem;
+			font-size: .5rem
+		}
+	}
+}
+
+.grouped-project {
+	background-color: #e0e0e0;
+	& ~ .row {
+		border-bottom: 1px solid gray;
+	}
+}
+
+.weekly {
+	border-bottom: 1px solid gray;
+	span {
+		display: block;
+		clear: both;
+		text-align: right;
+		&.day, &.week-total {
+			font-weight: 700;
+			border-bottom: 1px solid gray
+		}
+		&.hours {
+			font-size: 1.5rem;
+		}
+		&.week-total + .hours {
+			font-weight: 700;	
+		}
+	}
+
+}

@@ -1,0 +1,144 @@
+body {
+  background-color: #f0f0f0; }
+
+nav {
+  background-color: #c0c0c0; }
+  nav ul li {
+    list-style: none;
+    float: left;
+    width: 16.66667%;
+    line-height: 4.5rem; }
+
+#header, #timesheet {
+  max-width: 100%; }
+  #header input, #timesheet input {
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+    height: 2rem; }
+
+#timesheet_for {
+  background-color: #d0d0d0;
+  padding-left: 12.5%;
+  padding-right: 12.5%; }
+  #timesheet_for label {
+    float: left;
+    font-weight: 700;
+    line-height: 3.25rem; }
+  #timesheet_for input {
+    width: auto; }
+  #timesheet_for a.button {
+    float: left;
+    margin: 0.25rem 0 0 0.5rem; }
+    #timesheet_for a.button.small {
+      margin: 0.5rem 0 0; }
+  #timesheet_for ~ div {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto; }
+
+#add_a_project {
+  border: 1px solid gray;
+  background-color: white;
+  position: relative; }
+  #add_a_project .popover {
+    position: absolute;
+    top: 6.3rem;
+    left: 0;
+    border: 1px solid gray;
+    background-color: white;
+    z-index: 100; }
+    #add_a_project .popover .close {
+      position: absolute;
+      top: -7rem;
+      left: -0.5rem; }
+      #add_a_project .popover .close a {
+        color: black; }
+    #add_a_project .popover .details {
+      position: absolute;
+      top: 0;
+      left: 16.7rem;
+      border: 1px solid gray;
+      background-color: white;
+      min-width: 268px; }
+
+.grouped-project .large-1, .grouped-project .medium-1, .project .large-1, .project .medium-1, .task .large-1, .task .medium-1 {
+  text-align: right; }
+
+.task .columns {
+  position: relative; }
+.task input {
+  text-align: right; }
+.task .check:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  font-size: 0.5rem; }
+.task .double-check:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  display: block;
+  position: absolute;
+  top: 0.9rem;
+  left: 1.25rem;
+  font-size: 0.5rem; }
+.task .double-check:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  display: block;
+  position: absolute;
+  top: 1.1rem;
+  left: 1.25rem;
+  font-size: 0.5rem; }
+.task .rejected input {
+  border: 1px solid red; }
+.task .rejected:before {
+  font-family: 'FontAwesome';
+  content: "\f111";
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  font-size: .5rem;
+  color: red; }
+.task .dot:before {
+  font-family: 'FontAwesome';
+  content: "\f10c";
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  font-size: 0.5rem; }
+.task .dirty input {
+  background-color: #c0c0c0; }
+.task .dirty:before {
+  font-family: 'FontAwesome';
+  content: "\f10c";
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  font-size: 0.5rem; }
+
+.grouped-project {
+  background-color: #e0e0e0; }
+  .grouped-project ~ .row {
+    border-bottom: 1px solid gray; }
+
+.weekly {
+  border-bottom: 1px solid gray; }
+  .weekly span {
+    display: block;
+    clear: both;
+    text-align: right; }
+    .weekly span.day, .weekly span.week-total {
+      font-weight: 700;
+      border-bottom: 1px solid gray; }
+    .weekly span.hours {
+      font-size: 1.5rem; }
+    .weekly span.week-total + .hours {
+      font-weight: 700; }
+
+/*# sourceMappingURL=custom.css.map */

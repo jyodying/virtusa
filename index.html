@@ -1,0 +1,449 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+  <nav id="header" class="row">
+    <div class="large-12 columns">
+      <ul><li><h1>Logo</h1></li>
+        <li>Home</li>
+        <li>Schedule</li>
+        <li>Track</li>
+        <li>Bill</li>
+        <li><span>Welcome, David</span> | <span>Settings</span> | <span>Log Off</span></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row" id="timesheet">
+    <div class="large-12 columns">
+      <form id="form_timesheet" class="">
+        <div id="timesheet_for" class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Timesheet for</label>
+            <input type="text" placeholder="" />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>for week of</label>
+            <input type="text" placeholder="" />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <div class="row collapse">
+              <a href="#" id="btn_save_all" class="small success button">Save All</a>
+              <a href="#" id="btn_submit_all" class="success button disabled dot">Submit All</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row weekly">          
+          <div class="large-3 medium-3 columns">
+            <div id="add_a_project">
+              <label><h5>Add a project or task</h5></label>
+              <input type="text" placeholder="" />
+              <small>Enter a client/project/task name or code</small>
+              <div class="popover hide">
+                <div class="close"><a class="fa fa-times-circle"></a></div>
+                <header>3 projects found</header>
+                <ul>
+                  <li>
+                    EAir Intranet Re-build -- Opportunity
+                    <small>Elliot Aerospace P001000-008</small>
+                  </li>
+                  <li>
+                    EAir Requirements
+                    <small>Elliot Aerospace P001000-008</small>
+                    <div class="details" style="display: none">
+                      <header><small>P999999-009 Elliot Aerospace</small>
+                        EAir Requirements
+                      </header>
+                      <h6>Engagement Manager</h6>
+                      John Smith
+                      <h6>Project Manager</h6>
+                      Mary Jones
+                      <h6>Description</h6>
+                      Blah blah blah
+                      <a href="#" class="button">Add 2 Selected Tasks</a><br/>
+                    </div>
+                  </li>
+                  <li>
+                    EAir Webcast System Build
+                    <small>Elliot Aerospace P001000-008</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="date">10 Apr</span><span class="day">Sun</span><span class="hours">0</span>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="date">10 Apr</span><span class="day">Sun</span><span class="hours">0</span>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="date">10 Apr</span><span class="day">Sun</span><span class="hours">0</span>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="date">10 Apr</span><span class="day">Sun</span><span class="hours">0</span>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="date">10 Apr</span><span class="day">Sun</span><span class="hours">0</span>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="date">10 Apr</span><span class="day">Sun</span><span class="hours">0</span>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="date">10 Apr</span><span class="day">Sun</span><span class="hours">0</span>
+          </div>
+          <div class="large-1 medium-1 columns"><span class="week-total">Week Total</span><span class="hours">34.00</span>
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row grouped-project">
+          <div class="large-3 medium-3 columns">
+            <h5>Billable</h5>
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">13.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">7.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">2.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+            To Date
+          </div>
+        </div>
+        <div class="row project">
+          <div class="large-3 medium-3 columns">
+            <h5>Acme Mfg. Intranet Integration</h5>
+            <small>Acme Manufacturing | 9999999-001</small>
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">13.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">7.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">2.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+            To Date
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns task-name">
+            Determine scope <span>Late</span>
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Gather requirements
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns rejected"><input type="text" placeholder="" value="10.0" />
+          </div>
+          <div class="large-1 medium-1 columns check"><input type="text" placeholder="" value="3.0" />
+          </div>
+          <div class="large-1 medium-1 columns double-check"><input type="text" placeholder="" value="4.0" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="4.0" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="2.0" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">23.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Interview users
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns dirty dot"><input type="text" placeholder="" value="3.00" />
+          </div>
+          <div class="large-1 medium-1 columns dirty dot"><input type="text" placeholder="" value="3.00" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="2.00" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">8.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Determine scope <span>Late</span>
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Gather requirements
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns rejected"><input type="text" placeholder="" value="10.0" />
+          </div>
+          <div class="large-1 medium-1 columns check"><input type="text" placeholder="" value="3.0" />
+          </div>
+          <div class="large-1 medium-1 columns double-check"><input type="text" placeholder="" value="4.0" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="4.0" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="2.0" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">23.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Interview users
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns dirty dot"><input type="text" placeholder="" value="3.00" />
+          </div>
+          <div class="large-1 medium-1 columns dirty dot"><input type="text" placeholder="" value="3.00" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="2.00" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">8.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row grouped-project">
+          <div class="large-3 medium-3 columns">
+            <h5>Non-Billable</h5>
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">13.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">7.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">2.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+            To Date
+          </div>
+        </div>
+        <div class="row project">
+          <div class="large-3 medium-3 columns">
+            <h5>Acme Mfg. Intranet Integration</h5>
+            <small>Acme Manufacturing | 9999999-001</small>
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">13.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">7.00
+          </div>
+          <div class="large-1 medium-1 columns">6.00
+          </div>
+          <div class="large-1 medium-1 columns">2.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+            To Date
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Determine scope <span>Late</span>
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Gather requirements
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns rejected"><input type="text" placeholder="" value="10.0" />
+          </div>
+          <div class="large-1 medium-1 columns check"><input type="text" placeholder="" value="3.0" />
+          </div>
+          <div class="large-1 medium-1 columns double-check"><input type="text" placeholder="" value="4.0" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="4.0" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="2.0" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">23.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+        <div class="row task">
+          <div class="large-3 medium-3 columns">
+            Interview users
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns dirty dot"><input type="text" placeholder="" value="3.00" />
+          </div>
+          <div class="large-1 medium-1 columns dirty dot"><input type="text" placeholder="" value="3.00" />
+          </div>
+          <div class="large-1 medium-1 columns dot"><input type="text" placeholder="" value="2.00" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns"><input type="text" placeholder="" />
+          </div>
+          <div class="large-1 medium-1 columns">8.00
+          </div>
+          <div class="large-1 medium-1 columns">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('#add_a_project input').on('change keyup',function(){
+        console.log($(this).val());
+        if ($(this).val()!='') {
+          $('.popover').removeClass('hide').addClass('show');
+        } else {
+          $('.popover').removeClass('show').addClass('hide');
+        }
+      });
+
+      $('.popover .close a').click(function(){
+        $('.popover').removeClass('show').addClass('hide');
+        $('#add_a_project input').val('');
+      });
+
+      $('.popover li').click(function(){
+        $('.details').toggle('display');
+      });
+      
+      var headerHeight = $('#header').outerHeight();
+      $(window).scroll(function(){
+
+       if($(window).scrollTop() > headerHeight) {
+        $('#timesheet_for').css({'position':'fixed','top':0,'left':0,'width':$(window).outerWidth()*1.25,'z-index':101});
+      } else {
+        $('#timesheet_for').css('position','static');
+      }
+    });
+    });
+  </script>
+</body>
+</html>
