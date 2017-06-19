@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="29px" viewBox="0 0 36 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>hamburger icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Transaction-History" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Transaction-History---Mobile" transform="translate(-462.000000, -28.000000)" fill="#0079C2">
+            <path d="M462,57 L498,57 L498,52.1666667 L462,52.1666667 L462,57 Z M462,44.9166667 L498,44.9166667 L498,40.0833333 L462,40.0833333 L462,44.9166667 Z M462,32.8333333 L498,32.8333333 L498,28 L462,28 L462,32.8333333 Z" id="hamburger-icon"></path>
+        </g>
+    </g>
+</svg>

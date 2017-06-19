@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="10px" viewBox="0 0 20 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Transaction-History" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Transaction-History---Browser" transform="translate(-315.000000, -227.000000)" fill="#000000">
+            <path d="M315,227 L325,237 L335,227 L315,227" id="dropdown"></path>
+        </g>
+    </g>
+</svg>

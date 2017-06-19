@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="15px" viewBox="0 0 29 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Transaction-History" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Transaction-History---Mobile" transform="translate(-456.000000, -221.000000)" stroke="#FFFFFF">
+            <g id="Action-btn" transform="translate(316.000000, 207.000000)">
+                <g id="arrow" transform="translate(141.000000, 14.000000)">
+                    <g id="Group-2">
+                        <path d="M0,7.5 L25.2391304,7.5" id="Line" stroke-linecap="square"></path>
+                        <polyline id="Path-2" points="20.6617276 14.9797841 26.5312928 7.75403784 20.6617276 0.0568750338"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

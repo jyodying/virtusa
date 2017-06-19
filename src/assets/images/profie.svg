@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="56px" viewBox="0 0 58 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Profie</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Transaction-History" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Transaction-History---Browser" transform="translate(-1289.000000, -35.000000)" fill="#0079C2">
+            <g id="Header" transform="translate(70.000000, 20.000000)">
+                <path d="M1277,71 C1277,59.7913139 1267.91783,50.7093398 1256.71441,50.7093398 L1239.28559,50.7093398 C1228.09438,50.7093398 1219,59.7937778 1219,71 L1277,71 Z M1248.12832,47.7486312 C1240.5454,47.7486312 1234.39823,40.6190723 1234.39823,31.8243156 C1234.39823,23.029559 1240.5454,15.9 1248.12832,15.9 C1255.71124,15.9 1261.85841,23.029559 1261.85841,31.8243156 C1261.85841,40.6190723 1255.71124,47.7486312 1248.12832,47.7486312 Z" id="Profie"></path>
+            </g>
+        </g>
+    </g>
+</svg>
