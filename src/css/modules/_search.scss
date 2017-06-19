@@ -1,0 +1,43 @@
+
+/* ---------- start of some variable sets -------------- */
+$search-box-value: 43px;
+$search_box_padding: 5px 33px 5px 5px;
+$value-zero: 0;
+$value-none: none;
+/* ---------- end of some variable sets -------------- */    
+
+.#{$ns}-search {
+    width: $full-width;
+    position: relative;
+    &:before{
+    position: absolute;
+    top: $value-zero;
+    right: $value-zero;
+    width: $search-box-value;
+    height: $search-box-value;
+    line-height: $search-box-value;
+    text-align: center;
+    color: $accent9;
+    font-size: 20px;    
+    }
+    .#{$ns}-searchTerm {
+    width: $full-width;
+    border: $border-xx-large $white;
+    padding: $search_box_padding;
+    height: $search-box-value;
+    outline: $value-none;
+  }
+.#{$ns}-searchButton{
+    position: absolute;
+    top: $value-zero;
+    right: $value-zero;
+    width: $search-box-value;
+    height: $search-box-value;
+    cursor: pointer;
+    text-indent: -999px;
+    border: $value-none;
+    background: rgba(0, 0, 0, 0) url("../assets/images/search_icon.svg") no-repeat scroll center center;
+}
+}
+
+

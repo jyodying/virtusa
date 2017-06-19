@@ -1,0 +1,47 @@
+/* ---------- start of some variable sets -------------- */
+
+$link-font-size: 1rem; // 16px
+$link-group-header-padding: 9px 12px 2px;
+$link-group-header-margin: 4px;
+$link-group-header-line-height: 31px;
+$link-group-content-padding: 10px;
+$mobile_margin_left: -15px;
+
+/* ---------- end of some variable sets -------------- */
+
+.#{$ns}-linkgroup {
+	background: $accent5;
+	width: $full-width;
+	font-family: $fontname6;
+	.#{$ns}-linkgroup-inner-header {
+		background: $nyl_secondary_color2;
+		padding: $link-group-header-padding;
+		color: $white;
+		line-height: $link-group-header-line-height;
+		font-size: $link-font-size;
+		margin-bottom: $link-group-header-margin;
+		.nylui-quick-links-h3 {
+			font-size: $font-size-menu-medium;
+			font-family: $fontname6-bold;
+		}
+	}
+	.#{$ns}-linkgroup-inner-content {
+		padding: $link-group-content-padding;
+		li {
+			margin-bottom: $default_margin*3;
+			a {
+				color: $nyl_base_color;
+				font-size: $font-size-menu-header;
+				word-wrap: break-word;
+				&:hover {
+					color: $accent30;
+				}
+			}
+		}
+	}
+	@include respond-to('max-medium') {
+		margin-left: $mobile_margin_left;
+		margin-right: $mobile_margin_left;
+		width: auto;
+	}
+}

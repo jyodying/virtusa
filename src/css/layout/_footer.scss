@@ -1,0 +1,46 @@
+/* ---------- start of some variable sets -------------- */
+$text_uppercase: uppercase;
+/* ---------- end of some variable sets -------------- */
+
+.#{$ns}-footer {
+    padding: $default_padding*8 0;
+    margin-top: $default_margin*8;
+    background-color: $white;
+    text-align: center;
+    .#{$ns}-footercolumn {
+        color: $accent6;
+        padding-bottom: $default_padding*3;
+        li {
+            padding: $footer_link_padding;
+            a {
+				font-size: $font-size-base;
+                color: $nyl_secondary_color2;
+            }
+        }
+    }
+    .#{$ns}-privacy-policies {
+        font-size: $font-size-base;
+        padding-bottom: $default_padding*3;
+        >div {
+            margin: $default_padding*2 0;
+        }
+    }
+    .#{$ns}-footerborder {
+        @include border-half-width;
+				@include respond-to('max-medium') {
+					width: $full-width;
+				}
+    }
+    .#{$ns}-copyright {
+        font-size: $font-size-small;
+        padding-top: $footer_padding;
+        color: $accent8;
+        .#{$ns}-footer-bottom-step2{
+            display: block;
+            text-transform: $text_uppercase; 
+        }
+    }
+    @include respond-to('max-xs-small') {
+        padding-top: 0;
+    }
+}

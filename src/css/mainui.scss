@@ -1,0 +1,69 @@
+/*
+ * styles.scss
+*/
+
+@charset "UTF-8";
+
+@import 
+"base/variables",
+"base/mixins",
+"base/colors",
+"base/typography",
+"base/extends",    
+"base/common";
+
+/*
+ * Elements
+ */
+@import
+"elements/buttons",
+"elements/breadcrumb",
+"elements/checkbox",
+"elements/input",
+"elements/logo",
+"elements/textarea",
+"elements/radiobutton",
+"elements/select",
+"elements/datepicker",
+ "elements/label",
+ "elements/field-label",   
+"elements/contentpanel";
+/*
+ * Modules
+ */
+@import
+"modules/accordion",
+"modules/modal",
+"modules/tab",
+"modules/tooltip",
+"modules/linkgroup",    
+"modules/search",
+"modules/informationupdatebox",
+"modules/alertbox",
+"modules/transactiongrid",
+"modules/panel",    
+"modules/headermenu",
+"modules/policysummary",
+"modules/rightmenu",
+"modules/print";
+//"modules/filterpanel";    
+ 
+
+/*
+ * Layout
+ */
+@import
+"layout/header",
+"layout/footer";
+
+
+/*
+ * Utilities class need to apply after all classes applied
+ */
+ @import
+ "base/utilities";
+
+
+ @import
+ "external/bootstrap-datetimepicker",
+ "external/bootstrap-datetimepicker-standalone";

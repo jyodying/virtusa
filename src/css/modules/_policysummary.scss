@@ -1,0 +1,77 @@
+/* ---------- start of variable sets -------------- */
+
+$border-hr: 2px solid $nyl_web_color4;
+$policysummary-box-top-padding: 15px;
+$wrapper-min-height:228px;
+
+/* ---------- end of variable sets -------------- */
+
+.#{$ns}-hr {
+	border-top: $border-hr;
+	margin-top: $default-margin*6;
+}
+
+.#{$ns}-marginbottom10 {
+	@include margin-bottom-10;
+}
+
+.#{$ns}-policy-summary-wrapper {
+	border-top: $border-hr;
+	padding-top: $policysummary-box-top-padding;
+	margin-bottom: 35px;
+	.#{$ns}-card-block-wrapper {
+		min-height: $wrapper-min-height;
+		@include respond-to('max-xs-small') {
+			min-height: 180px;
+		}
+	}
+	.#{$ns}-policy-summary-label-small {
+		font-size: $font-size-h2;
+		width: $full-width;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.#{$ns}-longterm-label-small {
+		padding-top: 16px;
+	}
+}
+
+.#{$ns}-block-wrapper {
+	margin: 0 4%;
+}
+
+.#{$ns}-premium-due-label {
+	font-size: $font-size-menu-header;
+	color: $black;
+	margin-left: $default-margin*3;
+	float: left;
+	@include respond-to('max-xs-small') {
+		margin-left: 0;
+	}
+}
+
+@include respond-to('max-large') {
+	.#{$ns}-block-wrapper {
+		margin: 0%;
+	}
+}
+
+@include respond-to('max-medium') {
+	.#{$ns}-hr {
+		display: none;
+	}
+	.#{$ns}-Container {
+		display: table;
+		width: $full-width;
+		margin: 0;
+	}
+	.#{$ns}-block1 {
+		display: table-footer-group;
+	}
+	.#{$ns}-block2 {
+		display: table-header-group;
+	}
+	.#{$ns}-block3 {
+		display: table-row-group;
+	}
+}

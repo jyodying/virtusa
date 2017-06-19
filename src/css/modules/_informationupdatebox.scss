@@ -1,0 +1,34 @@
+  
+/* ---------- start of some variable sets -------------- */
+
+$box_default_padding: 16px;
+$box_default_margin: 0 0 25px;
+$box-line-height: 14px;
+
+/* ---------- end of some variable sets -------------- */
+.#{$ns}-information-box{
+    background: $accent11;
+    color: $white;
+    display: inline-block;    
+    padding: $box_default_padding;
+
+    h4{
+        font-size: $font-size-menu-medium;
+        margin: $box_default_margin;
+    }
+    span{
+        font-size: $font-size-label-medium;
+        line-height: $box-line-height;
+    }
+    @include respond-to('max-medium') {
+        margin-left: $mobile_margin_left;
+        margin-right: $mobile_margin_left;
+        width: auto;
+    }
+}
+
+@include respond-to('max-large') {
+    .#{$ns}-information-box{
+        display: block;
+    }
+} 

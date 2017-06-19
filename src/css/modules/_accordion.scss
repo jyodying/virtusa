@@ -1,0 +1,62 @@
+.#{$ns}-accordion {
+    padding-top: $default_padding*2;
+    width: $full-width;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        .#{$ns}-inner {
+            padding-left: $default_padding*3;
+            overflow: hidden;
+            display: none;
+        }
+    }
+
+    li {
+        margin: $small_margin*1 0;
+    }
+
+    ul li a.#{$ns}-toggle {
+        width: $full-width;
+        display: block;
+        font-size: $font-size-label-medium;
+        font-weight: 700;        
+        color: $white;
+        padding: $default_padding*3;
+        // border-radius: $default_border_radius;
+        transition: background .5s ease;
+        text-transform: uppercase;        
+
+        &:hover {
+           // background: $accent16;
+        }
+        &:after{
+            @include accordion-icon;
+            content:"\f067"; 
+        }
+
+        &.nylui-nyl_secondary_color2{
+            background: $nyl_secondary_color2;
+        }
+        &.nylui-accent28{
+            background: $accent28;
+        }
+    }
+    ul li a.nyl-pluse{
+        
+        &:after{
+           @include accordion-icon;
+           content:"\f067"; 
+        }
+    }
+    ul li a.nyl-minus{
+        
+        &:after{
+            @include accordion-icon;
+            content:"\f068"; 
+        }
+    }
+    
+
+    
+}
