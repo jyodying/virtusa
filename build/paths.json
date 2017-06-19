@@ -1,0 +1,54 @@
+{
+	"jquery": {
+		"path": "../../js/jquery.min",
+		"varName": "$"
+	},	
+	"logger": {
+		"path": "../../js/logger"
+	},	
+	"bootstrap-modal": {
+		"path": "../../js/external/bootstrap-modal"
+	},
+	"require-config": {
+		"path": "../../js/require-config"
+	},
+	"accordion": {
+		"path": "../../js/modules/accordion"
+	},
+	"datetimepicker": {
+		"path": "../../js/modules/datetimepicker"
+	},
+	"common": {
+		"path": "../../js/modules/common"
+	},
+	"charactercounter": {
+		"path": "../../js/modules/charactercounter"
+	},
+	"modal": {
+		"path": "../../js/modules/modal"
+	},
+	"tabs": {
+		"path": "../../js/modules/tabs"
+	},
+	"tooltip": {
+		"path": "../../js/modules/tooltip"
+	},    
+    "megamenu": {
+		"path": "../../js/modules/megamenu"
+	},
+	"rightmenu": {
+		"path": "../../js/modules/rightmenu"
+	},
+	"load-partials": {
+		"path": "load-partials"
+	},
+	"virtusauidocs-menu": {
+		"path": "virtusauidocs-menu"
+	},
+	"virtusauidocs": {
+		"path": "virtusauidocs"
+	},
+	"prettify": {
+		"path": "google-code-prettify/prettify"
+	}	
+}
