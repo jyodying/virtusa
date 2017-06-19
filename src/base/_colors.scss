@@ -1,0 +1,126 @@
+//blues
+.#{$ns}-basecolor {
+	background-color: $nyl_base_color;
+	color: $white;
+}
+
+.#{$ns}-secondarycolor1 {
+	background-color: $accent11;
+	color: $white;
+}
+
+.#{$ns}-secondarycolor2 {
+	background-color: $nyl_secondary_color2;
+	color: $white;
+}
+
+.#{$ns}-secondarycolor3 {
+	background-color: $nyl_secondary_color3;
+	color: $white;
+}
+
+.#{$ns}-secondarycolor4 {
+	background-color: $nyl_secondary_color4;
+	color: $white;
+}
+
+//NYL background colors starts here
+.#{$ns}-backgroundcolor1 {
+	background-color: $nyl_background_color1;
+	color: $white;
+}
+
+.#{$ns}-backgroundcolor2 {
+	background-color: $nyl_background_color2;
+	color: $white;
+}
+
+.#{$ns}-backgroundcolor3 {
+	background-color: $nyl_background_color3;
+	color: $white;
+}
+
+.#{$ns}-backgroundcolor4 {
+	background-color: $nyl_background_color4;
+	color: $white;
+}
+
+//NYL background colors ends here
+//NYL web specific colors starts here
+.#{$ns}-webcolor1 {
+	background-color: $nyl_web_color1;
+	color: $white;
+}
+
+.#{$ns}-webcolor2 {
+	background-color: $nyl_web_color2;
+	color: $white;
+}
+
+.#{$ns}-webcolor3 {
+	background-color: $accent20;
+	color: $white;
+}
+
+.#{$ns}-webcolor4 {
+	background-color: $nyl_web_color4;
+	color: $white;
+}
+
+//NYL web specific colors ends here
+.#{$ns}-alert-success {
+	background-color: $accent12;
+	color: $white;
+}
+
+.#{$ns}-alert-danger {
+	background-color: $accent13;
+	color: $white;
+}
+
+//colors used for designated fund types
+.#{$ns}-fundtype1 {
+	background-color: $accent16;
+	color: $white;
+}
+
+.#{$ns}-fundtype2 {
+	background-color: $accent17;
+	color: $white;
+}
+
+.#{$ns}-fundtype3 {
+	background-color: $accent18;
+	color: $white;
+}
+
+.#{$ns}-lighterblue {
+	background-color: $nyl_lighter_blue;
+	color: $nyl_dark_blue;
+}
+
+//greys
+.#{$ns}-darkergrey {
+	background-color: $nyl_darker_grey;
+	color: $white;
+}
+
+.#{$ns}-darkgrey {
+	background-color: $nyl_dark_grey;
+	color: $white;
+}
+
+.#{$ns}-grey {
+	background-color: $nyl_grey;
+	color: $black;
+}
+
+.#{$ns}-lightgrey {
+	background-color: $nyl_light_grey;
+	color: $black;
+}
+
+.#{$ns}-lightergrey {
+	background-color: $nyl_lighter_grey;
+	color: $nyl_text_color;
+}

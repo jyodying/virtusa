@@ -1,0 +1,91 @@
+  /* ---------- start of some variable sets -------------- */
+  
+  $label_large_font: 3rem; // 48px
+  $label_dolar_font: 2.750rem; //44px
+  $label_small_font: 28px;
+  $label-padding: 2px 16px;
+  $label-padding_right:50px;
+  $cash-value-mobile:-15px;
+  .dolaricon {
+  	font-size: $font-size-menu-medium;
+  	vertical-align: super;
+  }
+  /* ---------- end of some variable sets -------------- */
+  
+  .#{$ns}-label {
+  	color: $black;
+  	text-align: center;
+  	outline: none;
+  	border: none;
+  	&.#{$ns}-labalblue {
+  		background-color: $accent1;
+  	}
+  	&.#{$ns}-labaldarkblue {
+  		background-color: $accent2;
+  	}
+  	&.#{$ns}-laballightgreen {
+  		background-color: $accent3;
+  	}
+  	&.#{$ns}-laballightorange {
+  		background-color: $accent4;
+  	}
+  	&.#{$ns}-largelabel {
+  		font-size: $label_large_font;
+  		padding: $label-padding;
+  	}
+  	&.#{$ns}-smalllabel {
+  		font-size: $label_small_font;
+  		padding: $label-padding;
+  	}
+  	&.#{$ns}-accountnum-label {
+  		font-size: $font-size-h2;
+  		margin-left: $default_margin*2;
+  		padding-right: $label-padding_right;
+  	}
+  	&.#{$ns}-accountnum-wrapper {
+  		text-align: right;
+  		.#{$ns}-fieldlabel {
+  			span {
+  				padding-right: 50px;
+  			}
+  		}
+  	}
+  	.#{$ns}-labelinner {
+  		text-align: left;
+  		margin: $default_margin*2 0;
+  		.#{$ns}-detaillabel-large {
+  			font-size: $label_dolar_font;
+  			width: $full-width;
+  			text-align: left;
+  			.#{$ns}-dolaricon {
+  				@extend .dolaricon;
+  				@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  					position: relative;
+  					top: 6px;
+  				}
+  			}
+  		}
+  		.#{$ns}-detaillabel-small {
+  			font-size: $font-size-h2;
+  			width: $full-width;
+  			text-align: left;
+  			.#{$ns}-dolaricon {
+  				@extend .dolaricon;
+  				position: relative;
+  				top: 4px;
+  				@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  					position: relative;
+  					top: 6px;
+  				}
+  			}
+  		}
+  		.#{$ns}-benefit-label {
+  			font-size: $font-size-menu-header;
+  			margin-left: $default_margin*2;
+  			display: block;
+  		}
+  	}
+  	@include respond-to('max-xs-small') {
+  		margin-right: $cash-value-mobile;
+  	}
+  }
