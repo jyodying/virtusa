@@ -1,0 +1,50 @@
+.inline-block{
+   display: inline-block;
+}
+/*font-size*/
+.font-size-x-small{
+    font-size: $font-size-x-small;
+}
+.#{$ns}-alignedright {
+	text-align: right;
+} 
+.#{$ns}-position_relative {
+	position: relative
+} 
+.#{$ns}-display_none {
+	display: none;
+}
+.#{$ns}-text_align_center {
+	text-align: center;
+} 
+.#{$ns}-text-transform-uppercase {
+	text-transform: uppercase;
+} 
+
+/*patten libry code*/
+.virtusauidocs-partials-code{
+    button{
+        width: 250px;
+    }
+}
+
+/*for two column layout overlapping feature*/
+.#{$ns}-left-panel-wrapper {
+    z-index: 4;
+}
+
+.#{$ns}-modal-backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    background-color: $white;
+}
+
+.#{$ns}-currency-format{
+    &:after{
+     //   content: '.00';
+    }
+}

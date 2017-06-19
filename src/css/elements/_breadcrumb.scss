@@ -1,0 +1,27 @@
+/* ---------- start Breadcrumb variable sets -------------- */
+$breadcrumb-right-margin:5px;
+$breadcrumb-icon-left-margin:5px;
+$breadcrumb-outer-margin:15px 0 10px;
+/* ---------- End Breadcrumb variable sets -------------- */
+
+.#{$ns}-breadcrumb-wrapper{
+    .#{$ns}-breadcrumb{
+        li{
+            float: left;
+            margin-right: $breadcrumb-right-margin;
+            a{
+                cursor: default;
+            }
+            i{
+                margin-left:$breadcrumb-icon-left-margin;
+                color:$nyl_base_color;
+            }
+            &.active{
+                color:$nyl_base_color;
+            }
+        }
+    }
+    width:100%;
+    @include clearfix(); 
+    margin:$breadcrumb-outer-margin;
+}

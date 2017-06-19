@@ -1,0 +1,39 @@
+  
+/* ---------- start of some variable sets -------------- */
+  $icon-right: 15px;
+  $icon-padding: 4px 7px;
+  $date-picker-input-padding: 4px 27px 4px 15px;
+
+/* ---------- end of some variable sets -------------- */
+.#{$ns}-datepicker {
+  &.#{$ns}-input {
+
+    input {
+      padding: $date-picker-input-padding;
+      background: $white;  
+    }
+  }
+  .#{$ns}-callendar-icon {
+      position: absolute;
+      padding: $icon-padding;
+      color: $nyl_text_color;
+      right: $icon-right;
+      background: $accent5;
+      cursor: pointer;
+  }
+
+  &.#{$ns}-floating-input {
+
+    input {
+      padding: 15px 15px 15px 50px;
+    }
+    > label {
+      padding: $default_padding*3 $default_padding*2 $default_padding*3 $default_padding*10;
+    }
+
+    input:focus + label {
+      padding: $default_padding*0 $default_padding*2 $default_padding*0 $default_padding*10;
+    }
+  }
+}
+

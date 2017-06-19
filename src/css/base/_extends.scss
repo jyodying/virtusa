@@ -1,0 +1,174 @@
+/* accordion controller  */
+.accordion-icon {
+    font-family: $fontname5;
+
+    float: right;
+    @include padding-mixin(0, 15px, 0, 0);
+}
+
+/* megamenu extends section controller  */
+
+/* ---------- start of individual variable sets -------------- */
+
+$menu-li-padding:15px;
+$small-value: 1px;
+
+/* ---------- end of individual variable sets -------------- */
+
+.#{$ns}-megamenu-column {
+    float: left;
+    position: relative;
+
+    padding: 2.5%;
+    min-height: 230px;
+
+    h3 {
+        font-family: $fontname7;
+        @include margin-mixin(0px, 0, 30px, 0);
+        font-weight: $font-normal-weight;
+
+        line-height: 33px;
+        font-size: $font-size-menu-large;
+        @include respond-to('max-medium'){
+            display: none;	
+        }
+    }
+    .nyl-ui-links{
+        li{
+            .#{$ns}-a-header{
+                @include margin-mixin(0,0,0,0);
+            }
+            a{
+                @include margin-mixin(0,0,0,15px);
+            }
+        }
+    }
+    .#{$ns}-li-block{
+      padding: $menu-li-padding 0; 
+    }
+    li,.#{$ns}-contact-div {
+        padding-bottom: $menu-li-padding;
+        .menu-learn-link-text{
+            color:$accent22;
+            @include respond-to('max-medium'){
+                color: $accent21;   
+                font-family: $fontname6;
+                font-size: $font-size-mobile-link;
+                font-weight: 700;
+            } 
+        }
+        a {
+            display: block;
+            font-family: $fontname7;
+            line-height: 17px;
+            font-size: $font-size-menu-medium;
+            color: $accent20;
+
+            span {
+                
+                &.#{$ns}-insure-value {
+                    font-family: $fontname6;
+                    font-size: $font-size-label-medium;
+                    color: $accent21;
+                    @include respond-to('max-medium'){
+                        display: none;    
+                    }                    
+                }
+
+                &.#{$ns}-insure-price {
+                    font-family: $fontname6;
+                    color: $accent21;
+                    @include respond-to('max-medium'){
+                        display: none;    
+                    } 
+                }
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+            @include respond-to('max-medium'){
+                color: $accent21;   
+                font-family: $fontname6;
+                font-size: $font-size-mobile-link;
+                font-weight: 700;
+            } 
+        }
+        .nyl-contact-section-li{
+            border-style: solid;
+            border-width: 1px 1px 1px 0;
+            border-color: $nyl_secondary_color2;
+            padding-bottom: $small-value;
+            .#{$ns}-contact-right{
+               padding-left: $small-value; 
+            }
+        }
+
+        .#{$ns}-tel-title {
+            padding-bottom: $small-value;
+            font-size: $font-size-label-medium;
+            color: $accent20;
+        }
+
+        .#{$ns}-contact-agent-label{
+            padding-bottom:$default-padding*4;
+        }
+
+        .#{$ns}-tel-no {
+            font-family: $fontname6-bold;
+            font-size: $font-size-tel-no;
+            color: $nyl_base_color;
+            padding-bottom: $default-padding*4;
+            @include respond-to('max-medium'){
+                padding-bottom: $default-padding*3;
+            } 
+        }
+
+        .#{$ns}-contact-name {
+            font-size: $font-size-base;
+            font-family: $fontname6;
+            color: $accent8;
+            margin-top: 2px;
+        }
+
+        .#{$ns}-contact-details {
+            padding-bottom: $small-value;
+            a{
+                font-size: $font-size-small;
+                color: $nyl_base_color;
+            }
+            
+        }
+        @include respond-to('max-medium'){
+             padding-top: $menu-li-padding;
+        } 
+    }
+
+    &:before {
+        content: '';
+        width: 2px;
+        position: absolute;
+        top: 25px;
+        bottom: 0;
+        left: 2%;
+        max-height: 195px;
+        background-color: $nyl_web_color4;
+
+        @include respond-to('max-medium'){
+            display: none;	
+        }
+
+    }    
+
+    @include respond-to('max-medium') {
+        width:$full-width !important;	
+        @include padding-mixin(0,0,0,0);
+        min-height: 0;
+    }
+}
+
+.#{$ns}-contact-div {
+    @include respond-to('max-medium'){
+        padding-top: 0 !important;
+    }
+}

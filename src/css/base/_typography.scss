@@ -1,0 +1,209 @@
+/****************************************************************************************
+************************************ fonts ***************************************
+****************************************************************************************/
+
+$fontname1: "OpenSans";
+$fontname2: "Lato";
+$fontname3: "Roboto";
+$fontname4: "BadScript";
+$fontname5: "FontAwesome";
+$fontname6: "effra-Regular";
+$fontname6-italic: "effra-italic";
+$fontname6-bold: "effra-bold";
+$fontname6-bolditalic: "effra-bolditalic";
+$fontname7: "AldaPro-Regular";
+$fontname7-regularItalic: "AldaPro-regularItalic";
+$fontname7-bold: "AldaPro-bold";
+$fontname7-boldItalic: "AldaPro-boldItalic";
+@font-face {
+	font-family: $fontname1;
+	src: url('base/fonts/OpenSans-Regular.eot');
+	src: url('base/fonts/OpenSans-Regular.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/OpenSans-Regular.woff') format('woff'), url('base/fonts/OpenSans-Regular.ttf') format('truetype'), url('base/fonts/OpenSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname2;
+	src: url('base/fonts/Lato-Regular.eot');
+	src: url('base/fonts/Lato-Regular.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/Lato-Regular.woff') format('woff'), url('base/fonts/Lato-Regular.woff2') format('woff2'), url('base/fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname3;
+	src: url('base/fonts/Roboto-Regular.eot');
+	src: url('base/fonts/Roboto-Regular.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/Roboto-Regular.woff') format('woff'), url('base/fonts/Roboto-Regular.ttf') format('truetype'), url('base/fonts/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname4;
+	src: url('base/fonts/BadScript-Regular.eot');
+	src: url('base/fonts/BadScript-Regular.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/BadScript-Regular.woff') format('woff'), url('base/fonts/BadScript-Regular.ttf') format('truetype'), url('base/fonts/BadScript-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname6;
+	src: url('base/fonts/EffraPro-Regular.eot');
+	src: url('base/fonts/EffraPro-Regular.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/EffraPro-Regular.woff') format('woff'), url('base/fonts/EffraPro-Regular.ttf') format('truetype'), url('base/fonts/EffraPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname6-italic;
+	src: url('base/fonts/EffraPro-Italic.eot');
+	src: url('base/fonts/EffraPro-Italic.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/EffraPro-Italic.woff') format('woff'), url('base/fonts/EffraPro-Italic.ttf') format('truetype'), url('base/fonts/EffraPro-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $fontname6-bold;
+	src: url('base/fonts/EffraPro-Bold.eot');
+	src: url('base/fonts/EffraPro-Bold.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/EffraPro-Bold.woff') format('woff'), url('base/fonts/EffraPro-Bold.ttf') format('truetype'), url('base/fonts/EffraPro-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname6-bolditalic;
+	src: url('base/fonts/EffraPro-BoldItalic.eot');
+	src: url('base/fonts/EffraPro-BoldItalic.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/EffraPro-BoldItalic.woff') format('woff'), url('base/fonts/EffraPro-BoldItalic.ttf') format('truetype'), url('base/fonts/EffraPro-BoldItalic.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $fontname7;
+	src: url('base/fonts/AldaPro-Regular.eot');
+	src: url('base/fonts/AldaPro-Regular.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/AldaPro-Regular.woff') format('woff'), url('base/fonts/AldaPro-Regular.ttf') format('truetype'), url('base/fonts/AldaPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname7-regularItalic;
+	src: url('base/fonts/AldaPro-RegularItalic.eot');
+	src: url('base/fonts/AldaPro-RegularItalic.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/AldaPro-RegularItalic.woff') format('woff'), url('base/fonts/AldaPro-RegularItalic.ttf') format('truetype'), url('base/fonts/AldaPro-RegularItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: $fontname7-bold;
+	src: url('base/fonts/AldaPro-Bold.eot');
+	src: url('base/fonts/AldaPro-Bold.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/AldaPro-Bold.woff') format('woff'), url('base/fonts/AldaPro-Bold.ttf') format('truetype'), url('base/fonts/AldaPro-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $fontname7-boldItalic;
+	src: url('base/fonts/AldaPro-BoldItalic.eot');
+	src: url('base/fontsAldaPro-BoldItalic.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('base/fonts/AldaPro-BoldItalic.woff') format('woff'), url('base/fonts/AldaPro-BoldItalic.ttf') format('truetype'), url('base/fonts/AldaPro-BoldItalic.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+/*
+ * type styles
+ */
+
+html {
+	font-size: 16px;
+	@include respond-to('max-xs-small') {
+		font-size: 12px;
+	}
+}
+
+body {
+	font-family: $fontname6;
+	color: $accent25;
+	font-size: $font-size-default;
+}
+
+a {
+	color: $nyl_base_color;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover{
+	text-decoration:underline;
+}
+p {
+	font-size: $font-size-default;
+	line-height: 1.25;
+	text-align: left;
+	margin: $default_margin*2 0;
+}
+
+p {
+	&.nylui-intro-text {
+		font-size: $font-size-intro-text;
+		font-family: $fontname7;
+		margin: 0 0 $default_margin*6 0;
+		line-height: 37px;
+		color: $accent11;
+	}
+}
+
+span {
+	&.nylui-intro-higlighted-text {
+		font-size: $font-size-intro-text;
+		font-family: $fontname7;
+		background-color: $accent24;
+		padding: 0 0 $default_padding;
+	}
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+h1 {
+	font-family: $fontname7;
+	width: $full-width;
+	font-size: $font-size-main-header;
+	line-height: 3rem;
+}
+
+h2 {
+	font-family: $fontname6;
+	width: $full-width;
+	font-size: $font-size-sub-header;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+h2 {
+	&.nylui-higlighted-header {
+		font-family: $fontname7;
+		margin-bottom: $default_margin*2;
+		span {
+			background-color: $accent24;
+			padding: 0 $default_padding;
+		}
+	}
+	&.nylui-center-h2 {
+		color: $accent11;
+		font-family: $fontname7;
+		font-size: $font-size-h2;
+	}
+}

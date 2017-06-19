@@ -1,0 +1,80 @@
+  
+/* ---------- start of some button variable sets -------------- */
+
+$button_default_color: $nyl_base_color;
+$primary_button_padding: 17px 0;
+$secondary_button_padding: $default_padding*2 $default_padding*3;
+$primary_button_margin: $default_margin*2;
+$invert_button_padding: 9px 24px;
+$button_default_font_size: 1.250rem; // 20px
+
+/* ---------- end of some button variable sets -------------- */
+
+.#{$ns}-button {
+  display: inline-block;
+  @include border-radius($default_border_radius);
+  @include box-shadow();
+  width: $full-width;  
+  padding: $primary_button_padding;
+  background-color: $button_default_color;    
+  font-size: $button_default_font_size;
+  margin-bottom: $primary_button_margin;
+  color: $white;
+  font-family: $fontname6; 
+  text-transform: uppercase;  
+  outline: none;
+  border: none;
+  &.#{$ns}-btnblue {
+    background-color: $button_default_color;    
+  } 
+  &.#{$ns}-btnlightblue {
+    background-color: $nyl_secondary_color2;    
+  }
+  &.#{$ns}-btngray {
+    background-color: $accent10; 
+    color: $accent9;
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    background-color: $accent10;
+    border-color: $accent10;
+  }  
+  }
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    background-color: $accent16;
+    border-color: $accent16;
+  }
+ 
+  &:disabled {
+    background-color: $nyl_lighter_blue;
+    border-color: $nyl_lighter_blue;
+  }
+
+  .#{$ns}-button-icon-left {
+    margin-left: $default_margin*2;
+  }
+  .#{$ns}-button-icon-right {
+    margin-right: $default_margin*2;
+  }
+  &.#{$ns}-fluid {
+    width: 100%;
+  }
+  &.#{$ns}-small {
+    padding: $secondary_button_padding;
+  }
+  &.#{$ns}-oval {
+    @include border-radius($default_border_radius*5);
+    .#{$ns}-icon {
+      margin-left: 5px;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+

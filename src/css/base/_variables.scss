@@ -1,0 +1,197 @@
+/****************************************************************************************
+*************************** Theme For the NewYorkLife UI Library *********************************
+***************************************************************************************/
+
+$theme: "NewYorkLife-Corporate" !default;
+
+/*
+ * Pseudo namespace with a ns- prefix For the NewYorkLife UI Library
+ */
+$ns: "nylui";
+
+
+/****************************************************************************************
+*************************** Break points for responsive *********************************
+***************************************************************************************/
+
+$max-xs-small: 479px; // screen-xs-max
+$xs-small: 480px; // screen-sm-min
+
+$max-small: 767px; // screen-xs-max
+$small: 768px; // screen-sm-min
+
+$max-medium: 991px; // screen-sm-max
+$medium: 992px; // screen-md-min
+
+$max-large: 1199px; // screen-md-max
+$large: 1200px; // screen-lg-min
+
+$extra-large: 1599px;
+$max-extra-large: 1600px;
+
+$breakpoints: ( 'xs-small': (min-width: $xs-small), 'small': (min-width: $small), 'medium': (min-width: $medium), 'large': (min-width: $large), 'extra-large':(min-width:$extra-large), 'max-xs-small': (max-width: $max-xs-small), 'max-small': (max-width: $max-small), 'max-medium': (max-width: $max-medium), 'max-large': (max-width: $max-large), 'max-extra-large':(max-width:$max-extra-large));
+
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+    @if $raw-query {
+        $query: if(type-of($raw-query)=='string', unquote($raw-query), inspect($raw-query));
+        @media #{$query} {
+            @content;
+        }
+    }
+    @else {
+        @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+}
+
+
+
+/****************************************************************************************
+************************************** Color *******************************************
+***************************************************************************************/
+/*
+ * NewYorkLife Standard Colors for NewYorkLife UI Library
+ */
+$nyl_base_color: #0079c2; // Base color for entire theme
+$nyl_secondary_color2: #42b8fb; //light rain
+$nyl_secondary_color3: #a994d8; // light twilight
+$nyl_secondary_color4: #f8a04b; // light sunset
+$nyl_web_color1: #35363a; // web rock
+$nyl_web_color2: #5e605e; // functional gray 1
+$nyl_web_color4: #cdcdcd; // functional gray 3
+$nyl_background_color1: #fff9ee; // light gold
+$nyl_background_color2: #f5f5f5; // functional gray 4 
+$nyl_background_color3: #f0f6e5; // light green background
+$nyl_background_color4: #f4fafe; // light blue background
+$nyl_darker_blue: #005984;
+$nyl_lighter_blue: #ade0ee;
+$nyl_darker_grey: #333333;
+$nyl_dark_grey: #76777b;
+$nyl_light_grey: #d1d0ce;
+$nyl_lighter_grey: #f0f0f0;
+$nyl_dark_blue: #0073ae;
+$nyl_darker_grey: #333333;
+$nyl_grey: #CDCDCD;
+$nyl_light_grey: #d1d0ce;
+$nyl_lighter_grey: #f0f0f0;
+
+/*
+ * NewYorkLife Secondary Colors for NewYorkLife UI Library
+ */
+$nyl_orange: #e36f1e;
+$nyl_green: #558B2F;
+$nyl_light_green: #b8e986;
+$nyl_red: #c41c30;
+$nyl_yellow: #fdb913;
+$nyl_grape: #b0237c;
+$nyl_brown: #886146;
+
+/*
+ * NewYorkLife Supporting Colors for NewYorkLife UI Library
+ */
+$black: #000;
+$white: #fff;
+$nyl_text_color: #444;
+$accent1: #BFE6FD;
+$accent2: #b5c8d0;
+$accent3: #cfe2a9;
+$accent4: #fcddbd;
+$accent5: #f5f5f5;
+$accent6: #4EC7FB;
+$accent7: #797979;
+$accent8: #666666;
+$accent9: #353535;
+$accent10: #D8D8D8;
+$accent11: #0A3C53;
+$accent12: #62B10B;
+$accent13: #EB5B4F;
+$accent14: #F2F2F2;
+$accent15: #0A3C58;
+$accent16: #0073ae;
+$accent17: #466e5a; //aggressive green
+$accent18: #769870; // moderate green
+$accent19: #96dea3; // concervative green
+$accent20: #7D7F7D;
+$accent21: #ABACB5;
+$accent22:#0080C5;
+$accent23:transparent;
+$accent24: #c6e9fd;
+$accent25: #333333;
+$accent26:#7c61a7;
+$accent27:#ccc;
+$accent28:#205F7C;
+$accent29:#949494;
+$accent30:#008FE5; // roll over links
+/****************************************************************************************
+************************ Padding, Margins and Border Radius *****************************
+****************************************************************************************/
+$default_margin: 5px;
+$default_padding: 5px;
+$default_border_radius: 3px;
+$default_border_padding: 5px;
+$padding-3: 3px;
+$label-padding: 2px 16px;
+
+/****** new chnages **********/
+$small_margin: 1px;
+$footer_link_padding: 0 14px;
+$footer_padding: 30px;
+$margin-center: 0 auto;
+$tab_padding: 10px 15px;
+$tab_samll_margin: 0 2px;
+
+/****************************************************************************************
+*************************************** Paths *******************************************
+****************************************************************************************/
+
+$image_path: '../assets/images/';
+$sprites: $image_path; // + 'sprites/';
+$miscImages: $image_path + 'misc/';
+
+/****************************************************************************************
+*************************************** font *******************************************
+****************************************************************************************/
+$font-size-xx-small: 0.5625rem; //9px
+$font-size-small: 0.750rem; // 12px
+$font-size-x-small: 0.625rem; // 10px
+$font-size-x-large: 2em; //32px
+
+$font-size-base: 1rem; // 16px
+$font-size-menu-medium: 1.125rem; // 18px
+$font-size-menu-header: 1.250rem; // 20px
+$font-size-label-medium: 0.875rem; // 14px
+$font-size-mobile-link: 1.5rem; // 24px
+$font-size-tel-no: 1.563rem; // 25px
+$font-size-menu-large: 2.250rem; // 36px
+$font-size-h2: 1.875rem; // 30px
+$font-size-intro-text: 1.625rem; // 26px
+$font-size-main-header:2.25rem; // 36px
+$font-size-sub-header:1.75rem;
+$font-size-default:100%;
+
+/****************************************************************************************
+*************************************** common *******************************************
+****************************************************************************************/
+
+/***** Z-Index ****/
+$large-z-index: 99;
+
+/***** Width ****/
+$full-width: 100%;
+$half-width: 50%;
+$half-5-width: 5%;
+
+$font-normal-weight:400;
+$font-weight-bold: bold;
+
+
+/****************************************************************************************
+*************************************** other *******************************************
+****************************************************************************************/
+
+$border-x-small: 0.5px solid;
+$border-small: 1px solid;
+$border-medium: 2px solid;
+$border-xx-large: 5px solid;
+$border-xxx-large: 10px solid;
+

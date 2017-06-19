@@ -1,0 +1,23 @@
+.#{$ns}-fieldlabel {
+	font-family: $fontname6-bold;
+	color: $black;
+	font-size: $font-size-small;
+}
+
+.#{$ns}-userlabel {
+	color: $black;
+	font-size: $font-size-label-medium;
+}
+
+.#{$ns}-text-uppercase {
+	text-transform: uppercase;
+}
+
+.#{$ns}-fieldcontent {
+	color: $black;
+	font-size: $font-size-menu-header;
+	line-height: 1.5em;
+	span {
+		font-family: $fontname7;
+	}
+}

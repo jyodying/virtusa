@@ -1,0 +1,15 @@
+.#{$ns}-logo {
+  padding: 0;
+  display: inline-block;
+  img {
+    width: 71px;
+    height: 72px;
+  }
+  &-wrapper {
+        font-size: 1.2rem;
+        display: inline-block;
+        .#{$ns}-logo-text {
+            padding-left: $default_padding;
+        }
+    }
+}
