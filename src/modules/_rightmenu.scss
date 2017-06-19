@@ -1,0 +1,119 @@
+//urls
+$url_0: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20height%3D%2215%22%20width%3D%2229%22%20version%3D%221.1%22%20viewBox%3D%220%200%2029%2015%22%3E%3Ctitle%3Earrow%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20id%3D%22arrow-Transaction-History%22%20fill-rule%3D%22evenodd%22%20fill%3D%22none%22%3E%3Cg%20id%3D%22arrow-Transaction-History---Mobile%22%20stroke%3D%22%23fff%22%20transform%3D%22translate%28-456%20-221%29%22%3E%3Cg%20id%3D%22arrow-Action-btn%22%20transform%3D%22translate%28316%20207%29%22%3E%3Cg%20id%3D%22arrow-arrow%22%20transform%3D%22translate%28141%2014%29%22%3E%3Cg%20id%3D%22arrow-Group-2%22%3E%3Cpath%20id%3D%22arrow-Line%22%20stroke-linecap%3D%22square%22%20d%3D%22m0%207.5h25.239%22%2F%3E%3Cpolyline%20id%3D%22arrow-Path-2%22%20points%3D%2220.662%2014.98%2026.531%207.754%2020.662%200.056875%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+$data_uri_0: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAptJREFUaAXV2k9OGzEUBvBno0qVKnEkwiHoFcgByoKkawib7kuuwAm6K1yEnqCLriohZurndEIG7LHf8+fEjISYTGy/75f5o8zEhi5+fKIPH78R2c/UPf8hY1Z0M1vTe1ou78+p7xdkj46Jujt6+vvF0OL+O5GZjxx953Cny9G2Vl9c/rwmYxejeMasrd9To63uBTfkDq0vIRRn7unM+sMvBGgdF0OxxZ1S1p9TIRhvaxU3hfK5zcr+v1DED7vWcCmUvz7M1ma7sxYPV249fsFo4YKShdpc9F5gLGwZJ0AxZQxrFSdEhWGt4RSoOKwVnBI1DTs0rgCVhh0KV4jKg+0bB0Dlw/aFA6FksNo4IEoOq4UDo3QwNK4CSg9D4SqhymCluIqocpgWVxmFgUlxe0DhYDxSTmBf8dWDF942LMB7vre3LUMRzf8UbmpMIIrLYGE8ogYHRtWBSXEVUPVgubhKKC7vHpgecDG2r1Udf45xUtl5dk2rk69oIB4mQw0eOA4L06Gq4HDnWArFFwr+iy9L5A8hmD2Wgxp+lpK0jX8IyXfKYZqgmj5JyrhBGawkYEnfsSH4Sg9DBEOMEWRpvysiAyHH2kHK91iNIBXGlMEqBNh+yOCx82HgwlvQ7gqwRh4MWHDXEVwH1UrDQIWCiNhGQM1pGKBALHtye2HtOKxw4GTwnAYFGcKwggFz8oraKLO8hSkHEoWVNlZkGsMUA0gzqtsLs73AhB3VAUs6CjJuYIIOJbkgfTOzGuJJjMbcRotWfEQWrZl6I4nr59bPzIwN1CKKs/Ld+NRjBjfb1G6mmwZkraKGqFM4N4XWPcxxc2hfL62jhrxRXHdneWKwm2vqzjHzm0z/6A7N+buZD8xAj3OZu+6XN7DFmf4B6Ss7p0uwncsAAAAASUVORK5CYII=";
+
+.#{$ns}-right-menu {
+	background: #0A3C53;
+    margin-left: -60px;
+    margin-top: -30px;
+    padding-left: 55px;
+	padding-top: 30px;
+    padding-bottom: 35px;
+	height: 100%;
+	.#{$ns}-right-menu-inner {
+		h3 {
+			color: $white;
+			margin-bottom: 25px;
+			a{
+				color: $white;
+			}
+		}
+		h4 {
+			color: $white;
+			margin-bottom: 25px;
+			font-size: 0.9rem;
+		}
+		ul li a {
+			color: $white;
+			margin-bottom: 20px;
+			display: block;
+			font-size: 0.8rem;
+		}
+		margin-bottom:200px;
+	}
+		button {
+			display: none;
+		}
+	}
+.icon-arrow\:regular {
+	background-image: $url_0;
+	background-repeat: no-repeat;
+}
+.icon-arrow {
+	background-image: $url_0;
+	background-repeat: no-repeat;
+}
+.icon-arrow-dims {
+	width: 29px;
+	height: 15px;
+	position: absolute;
+	margin-left: 10px;
+}
+@media (max-width: $max-medium) {
+aside.#{$ns}-right-menu {
+	height: 35px;
+	position: absolute;
+	right:0;
+	margin-top: -34px;
+	min-width: 170px;
+	padding: 0;
+	.#{$ns}-right-menu-wrapper {
+		position: fixed;
+		z-index: 999;
+		background: $accent11;
+		top: 0;
+		width: 0;
+		height: 100%;
+		left: 0;
+		overflow-x: hidden;
+		transition: 0.5s;
+		button.btn-close-menu {
+			right: 25px;
+			height: 32px;
+			position: absolute;
+			top: 15px;
+			background-repeat: no-repeat;
+			background-image: url($data_uri_0);
+			width: 32px;
+			background-size: contain;
+		}
+		&.opened{
+			width: 100%;
+			z-index: 999;
+		}
+	}
+	.#{$ns}-right-menu-inner {
+		margin: 30px 0 15px;
+		h3 {
+			padding-left: 15px;
+			text-transform: uppercase;
+			font-size: 1.6rem;
+			border-bottom: solid 1px $accent27;
+			padding-bottom: 25px;
+		}
+		ul li a {
+			font-size: 1.2rem;
+			padding-left: 15px;
+			border-bottom: solid 1px $accent27;
+			padding-bottom: 20px;
+		}
+		margin-bottom:200px;
+	}
+	button {
+		background: transparent;
+		border: none;
+		color: $white;
+		padding: 10px;
+		font-size: 0.9rem;
+		width: 100%;
+		display: block;
+		text-align: center;
+		&.btn-right-menu {
+			padding-right: 35px;
+		}
+	}
+}
+	.nylui-left-panel-wrapper{
+		padding: 0;
+	}
+}

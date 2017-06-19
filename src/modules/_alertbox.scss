@@ -1,0 +1,30 @@
+  
+/* ---------- start of some variable sets -------------- */
+    $alert_padding: 15px;
+    $alert_margin: 10px 0;
+    $alert_position_top: -2px;
+/* ---------- end of some variable sets -------------- */    
+.#{$ns}-alert {
+    padding: $alert_padding;
+    color: $white;
+    margin: $alert_margin;
+    .#{$ns}-alert-close{
+    position: position-relative;
+    top: $alert_position_top;
+    right: 0;
+    float: right;
+    color: inherit;
+    }
+    &.#{$ns}-alert-success {
+    background-color: $accent12;    
+  }
+    &.#{$ns}-alert-default {
+    background-color: $nyl_base_color;    
+  }
+    &.#{$ns}-alert-danger {
+    background-color: $accent13;    
+  }   
+}
+
+
+  

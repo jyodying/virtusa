@@ -1,0 +1,59 @@
+//print
+
+@media print {
+	.#{$ns}-transaction-history-page {
+		-webkit-print-color-adjust: exact; //Force Chrome and Safari to print background color
+		width: 100%!important;
+		.#{$ns}-header, .#{$ns}-breadcrumb-wrapper, .#{$ns}-select .#{$ns}-arrow, .btn-actions, 
+		li:not(.#{$ns}-tab-current), .#{$ns}-datepicker .#{$ns}-callendar-icon, .#{$ns}-search,  
+		aside, footer {
+			display: none
+		}
+		li.#{$ns}-tab-current {
+			width: 19%!important;
+		}
+		.#{$ns}-tabs-container-top {
+			clear: both;
+			.nyljs-tabs {
+				width: 100%;
+			}
+		}
+		.#{$ns}-content-panel {
+			background-color: transparent;
+			.#{$ns}-content-panel, .#{$ns}-tabs-container {
+				background-color: transparent;
+				padding: 0;
+			}
+			.#{$ns}-content-panel-body {
+				padding:20px 0  0;
+			}
+			.#{$ns}-content-panel-body > row > [class^='col-'] {
+				padding:0;
+			}
+			header, li.#{$ns}-tab-current {
+				background: $black;
+			}
+			header i {
+				display: none;
+			}
+            .nylui-content-header{
+                background: $black;
+            }
+		}
+		.#{$ns}-grid-outerwrapper {
+			background-color: transparent;
+			.#{$ns}-grid .#{$ns}-grid-inner {
+				width: 1100px;
+				tr {
+					border-color: transparent;
+					th {
+						background-color: transparent;
+					} 				
+				}
+			}
+		}
+    .nylui-print-icon{
+        display: none;
+        }
+}
+}

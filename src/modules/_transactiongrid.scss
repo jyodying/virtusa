@@ -1,0 +1,38 @@
+  
+/* ---------- start of some variable sets -------------- */
+  $table_default_padding: 12px 4px;
+  $table_default_margin: 4px 0;
+  $table_header_padding: 7px 4px 2px;
+  $break-word: break-word;
+
+/* ---------- end of some variable sets -------------- */
+.#{$ns}-grid-outerwrapper{
+    background: $accent14;
+    width: $full-width; 
+.#{$ns}-grid {
+     .#{$ns}-grid-inner {
+    width: $full-width;
+         tr{
+             margin: $table_default_margin;
+             width: $full-width;
+             border-top: $border-xxx-large $accent14;
+             border-bottom: $border-xxx-large $accent14;
+             th{
+                background: $accent14;
+                padding: $table_header_padding;
+                text-align: left;
+                color: $accent15;
+                @extend .#{$ns}-text-transform-uppercase;
+                word-wrap: $break-word; 
+            }
+             td{
+                background: $white;
+                padding: $table_default_padding; 
+                color: $accent8;
+                word-wrap: $break-word; 
+            }
+        }
+         
+  }
+ }
+}

@@ -1,0 +1,266 @@
+//colors
+
+/* ---------- start of some variable sets -------------- */
+
+$black_50: rgba(0, 0, 0, 0.5);
+$color_mountain_mist_approx: #999999;
+$black_20: rgba(0, 0, 0, 0.2);
+$mercury: #e5e5e5;
+$pay-modal-close-font-size:2.5rem;
+$more-policy-header-font-size:1.750rem;
+.#{$ns}-all-zero {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
+/* ---------- end of some variable sets -------------- */
+
+.modal-open {
+	overflow: hidden;
+	.modal {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+}
+
+.modal {
+	@extend .#{$ns}-all-zero;
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	z-index: 99999;
+	outline: 0;
+	&.fade .modal-dialog {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translate(0, -25%); //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: transform 0.3s ease-out;
+	}
+	&.in .modal-dialog {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translate(0, 0);
+	}
+}
+
+.modal-dialog {
+	position: relative;
+	width: auto;
+	margin: $default_margin*2;
+}
+
+.modal-content {
+	position: relative;
+	background-color: $white;
+	border: 1px solid $color_mountain_mist_approx;
+	border: 1px solid $black_20; //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0; //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 3px 9px $black_50; //Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	outline: 0;
+}
+
+.modal-backdrop {
+	@extend .#{$ns}-all-zero;
+	position: fixed;
+	z-index: 1040;
+	background-color: $black;
+	&.fade {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	&.in {
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+}
+
+.modal-header {
+	padding: $default_padding*3;
+	border-bottom: 1px solid $mercury;
+	.close {
+		margin-top: -2px;
+
+		a:hover{
+			text-decoration: none;
+		}
+	}
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+	}
+}
+
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+
+.modal-body {
+	position: relative;
+	padding: $default_padding*3;
+}
+
+.modal-footer {
+	padding: $default_padding*3;
+	text-align: right;
+	border-top: 1px solid $mercury;
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+	}
+	.btn+.btn {
+		margin-left: $default_margin;
+		margin-bottom: 0;
+	}
+	.btn-group .btn+.btn {
+		margin-left: -1px;
+	}
+	.btn-block+.btn-block {
+		margin-left: 0;
+	}
+}
+
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+
+@include respond-to('small') {
+	.modal-dialog {
+		width: 600px;
+		margin: 30px auto;
+	}
+	.modal-content {
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 5px 15px $black_50;
+	}
+	.modal-sm {
+		width: 300px;
+	}
+}
+
+@include respond-to('medium') {
+	.modal-lg {
+		width: 900px;
+	}
+}
+
+.clearfix {
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+	}
+}
+
+.#{$ns}-ext-modal {
+	.modal-header .close {
+		float: right;
+	}
+	&.#{$ns}-pay-modal {
+		.modal-header {
+			padding: 0 $default_padding*3;
+			border-bottom: 0;
+			.close {
+				font-size: $pay-modal-close-font-size;
+				color: $accent25;
+				text-decoration: none;
+			}
+		}
+		.modal-body {
+			padding: 0 $default_margin*4 $default_margin*4;
+			.#{$ns}-modal-payment-section {
+				span {
+					width: $full-width;
+					display: block;
+					font-size: $font-size-x-large;
+					font-family: $fontname7;
+				}
+				a {
+					color: $nyl_secondary_color2;
+					text-transform: uppercase;
+					font-size: $font-size-base;
+					font-family: $fontname6;
+					float: right;
+					padding: $default_padding*3 0;
+					img {
+						width: 45px;
+						margin-top: -3px;
+					}
+				}
+			}
+			hr {
+				border-bottom: 2px solid $nyl_web_color4;
+			}
+			.nylui-checkbox {
+				color: $accent29;
+			}
+		}
+		@include respond-to('small') {
+			.modal-dialog {
+				width: 530px;
+			}
+		}
+	}
+	&.#{$ns}-more-policy-modal {
+		.modal-header {
+			padding: 0 $default_padding*3;
+			border-bottom: 0;
+			h3 {
+				font-family: $fontname7;
+				@include margin-mixin(10px, 0, 0, 0);
+				font-weight: $font-normal-weight;
+				line-height: 33px;
+				font-size: $more-policy-header-font-size;
+			}
+		}
+		.modal-body {
+			li {
+				>div {
+					padding-bottom: $default_padding*3;
+				}
+			}
+			a {
+				display: block;
+				font-family: $fontname7;
+				line-height: 17px;
+				font-size: $font-size-menu-medium;
+				color: $accent20;
+				span {
+					&.#{$ns}-insure-value {
+						font-family: $fontname6;
+						font-size: $font-size-label-medium;
+						color: $accent21;
+					}
+				}
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.modal-footer {
+			border-top: 0;
+		}
+		@include respond-to('small') {
+			.modal-dialog {
+				width: 330px;
+			}
+		}
+	}
+}
